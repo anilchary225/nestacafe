@@ -1,26 +1,16 @@
 import { useScrollReveal } from "@/hooks/use-scroll-reveal";
+import { Button } from "@/components/ui/button";
 
 const menuCategories = [
   {
-    title: "Coffee",
-    items: [
-      { name: "Espresso", price: "3.50", note: "single origin, rotating" },
-      { name: "Cortado", price: "4.50" },
-      { name: "Oat Flat White", price: "5.25" },
-      { name: "Pour Over", price: "5.00", note: "ask for today's bean" },
-      { name: "Cold Brew", price: "5.50", note: "16hr steep" },
-      { name: "Chai Latte", price: "5.00", note: "house-spiced" },
-    ],
-  },
-  {
     title: "Kitchen",
     items: [
-      { name: "Butter Croissant", price: "4.25", note: "baked at 5am" },
-      { name: "Sourdough Toast & Jam", price: "5.50", note: "house-made preserves" },
-      { name: "Granola Bowl", price: "8.00", note: "yogurt, seasonal fruit" },
-      { name: "Egg Sandwich", price: "9.50", note: "farm eggs, gruyère, arugula" },
-      { name: "Avocado Toast", price: "10.00", note: "sourdough, chili flake, lemon" },
-      { name: "Quiche of the Day", price: "8.50" },
+      { name: "MEXICAN GRILL VEG SANDWICH", price: "₹149" },
+      { name: "PESTO GRILL CHICKEN SANDWICH", price: "₹169" },
+      { name: "JAMAICAN CHICKEN SIZZLER", price: "₹319" },
+      { name: "Egg Sandwich", price: "₹149" },
+      { name: "CHICKEN STEAK MEAL", price: "₹259" },
+      { name: "BUNT GARLIC FRIED RICE", price: "₹239" },
     ],
   },
 ];
@@ -52,7 +42,7 @@ const CafeMenu = () => {
                   {cat.title}
                 </h3>
                 <ul className="space-y-4">
-                  {cat.items.map((item) => (
+                  {cat.items.slice(0, 4).map((item) => (  // Show first 4 items
                     <li key={item.name} className="flex items-baseline justify-between gap-3">
                       <div className="flex-1 min-w-0">
                         <span className="font-sans text-sm text-foreground">
@@ -64,21 +54,36 @@ const CafeMenu = () => {
                           </span>
                         )}
                       </div>
-                      <span
-                        className="flex-shrink-0 font-sans text-sm text-muted-foreground tabular-nums"
-                      >
+                      <span className="flex-shrink-0 font-sans text-sm text-muted-foreground tabular-nums">
                         {item.price}
                       </span>
                     </li>
                   ))}
+                  <li className="pt-4 mt-2 border-t border-border/50">
+                    <Button 
+                      variant="ghost" 
+                      size="sm" 
+                      asChild
+                      className="w-full justify-start text-cafe-terracotta hover:bg-cafe-terracotta/10 hover:text-cafe-terracotta font-sans text-sm"
+                    >
+                      <a 
+                        href="https://globxplorer.s3.ap-south-1.amazonaws.com/crm/documents/misc/Nesta+cafe+Menu+card.pdf" 
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        View full menu →
+                      </a>
+                    </Button>
+                  </li>
                 </ul>
               </div>
             ))}
           </div>
 
           <p className="text-center text-xs text-cafe-warm-gray font-sans mt-12 italic">
-            All prices in USD · Oat, almond & coconut milk available · We source locally when possible
+            All prices in INR
           </p>
+
         </div>
       </div>
     </section>

@@ -1,4 +1,4 @@
-import heroImg from "@/assets/cafe-hero.jpg";
+import heroImg from "@/assets/WhatsApp Image 2026-03-23 at 7.56.39 PM(1).jpeg";
 
 const CafeHero = () => {
   return (
@@ -8,7 +8,7 @@ const CafeHero = () => {
           {/* Text — offset on the grid */}
           <div className="md:col-span-5 md:col-start-1 reveal-up">
             <p className="text-xs font-sans uppercase tracking-[0.2em] text-cafe-warm-gray mb-6">
-              Est. 2018 · Portland, OR
+              Nesta Cafe
             </p>
             <h1
               className="font-serif text-4xl md:text-5xl lg:text-6xl font-light text-foreground leading-[1.1] tracking-tight"
@@ -30,7 +30,7 @@ const CafeHero = () => {
               <img
                 src={heroImg}
                 alt="Inside Ember & Oak café — warm light, espresso, and plants"
-                className="w-full h-[340px] md:h-[480px] object-cover"
+                className="w-full h-[500px] md:h-[480px] object-cover"
                 style={{ borderRadius: "2px" }}
                 loading="eager"
               />

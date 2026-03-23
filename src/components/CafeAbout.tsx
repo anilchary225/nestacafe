@@ -1,4 +1,4 @@
-import aboutImg from "@/assets/cafe-about.jpg";
+import aboutImg from "@/assets/IMG_20260322_211543.jpg.jpeg";
 import { useScrollReveal } from "@/hooks/use-scroll-reveal";
 
 const CafeAbout = () => {

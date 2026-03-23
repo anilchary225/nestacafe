@@ -2,18 +2,18 @@ import { useScrollReveal } from "@/hooks/use-scroll-reveal";
 
 const testimonials = [
   {
-    text: "I come here every Saturday. The cortado is the best in the city, and it's the only place that doesn't rush you.",
-    name: "Maren K.",
-    detail: "regular since 2019",
+    text: "Had a great experience at Nesta Café in Korremula! The place has a calm, cozy vibe with clean interiors and comfortable seating. The staff were friendly, quick, and genuinely welcoming.",
+    name: "Srilekhareddy Janga",
+    detail: "regular",
   },
   {
-    text: "Their sourdough is the real thing. I asked for the recipe once — they just laughed and poured me another coffee.",
-    name: "Tomás R.",
+    text: "Tasty food with budget-friendly prices.",
+    name: "Bhimanapally Srilekha.",
     detail: "moved to the neighborhood for this café",
   },
   {
-    text: "Quiet enough to read, warm enough to stay. That's all I needed.",
-    name: "Priya S.",
+    text: "Good food and ambience. Very nice place in the area ( jadimetla, narapally) both working class and students can  eat here. They get burgers , pizzas, pasta, continental, sizzlers and many more. They have wifi and good seating. Owner Mr. Nikhil is very kind and have a vision. I highly recomend this place.",
+    name: "abhilash kommu",
     detail: "weekday morning ritual",
   },
 ];
